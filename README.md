@@ -1,0 +1,5 @@
+# Efficiently Restore The Painting Process
+
+## Abstract
+
+Partially erasing the appearance in the image has been found to enhance the quality of image smoothing. Recent workof formulates this approach as an optimization-based EAP problem and proposes an iterative method of solving it. We firstanalyze the main drawback of their method, i.e. the slow running time. Motivated by this analysis, we then propose two methodsof initialization that could accelerate the process, by end-to-end machine-learning-based style transfer and by segment-graph-based image filtering . We demonstrate that our acceleration method achieves similar or, in many cases, better performance while being significantly faster than the original algorithm. To showcase the practicality of our method, we consider the applicationof the restoration of the painting process, which is to recover the three main middle stages based on only the final painting. Usingour method, we believe that this application could be done in almost real-time, which could be beneficial to the art communit
