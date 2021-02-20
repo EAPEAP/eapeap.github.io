@@ -1,0 +1,21 @@
+myDir = uigetdir; %gets directory
+myFiles = dir(fullfile(myDir,'*.image.png'));
+
+fprintf("%d\n", length(myFiles));
+mkdir("tmp");
+mkdir("results");
+
+for i = 1 : 1 % length(myFiles)
+    name = strcat(myDir, myFiles(i).name);
+    fprintf(myFi.name,"\n");
+    status = copyfile(name, './tmp');
+    
+%     img=imread('./tmp/input.png');
+%     output=eap(img, 0.1, @(a, b)l1flattening(a, b, struct()));
+%     imwrite(output, './tmp/output.png');
+%     
+%     for j = 1: 5
+%         copyfile(strcat('./tmp/output', num2str(j), '.png'), strcat('./results/', name, '.output', num2str(j), '.png'));
+%         copyfile(strcat('./tmp/mask', num2str(j), '.png'), strcat('./results/', name, '.mask', num2str(j), '.png'));
+%     end
+end
